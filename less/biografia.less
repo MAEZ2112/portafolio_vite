@@ -1,0 +1,64 @@
+div.parrafo-3 {
+    padding: 20px;
+    border: 7px dashed @primary-color;
+    border-radius: 10px;
+    background-color: @secondary-color-dark;
+    box-shadow: 0 4px 8px @secondary-color-super-dark;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+    max-width: 800px;
+
+    .titulo-3 {
+        margin-bottom: 0; 
+        width: 100%;  
+
+        h1 {
+            font-size: 75px;
+            color: @primary-color;
+
+            @media (max-width: #breaks[mobile]) {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .square2 {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;  
+
+        @media (max-width: #breaks[tablet]) {
+            height: 250px;
+            width: 250px;
+        }
+
+        @media (max-width: #breaks[mobile]) {
+            height: 200px;
+            width: 200px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border: 8px solid @primary-color;
+            border-radius: 50%; 
+        }
+    }
+
+    p {
+        margin: 0;
+        line-height: 1.8;
+        font-size: 21px;
+
+        @media (max-width: #breaks[mobile]) {
+            font-size: 14px;
+        }
+    }
+}
