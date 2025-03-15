@@ -1,84 +1,83 @@
 footer {
-    display: flex;
-    color: black;
-    padding: 1rem;
-    justify-content: center;
-    background-color: white;
-    margin-top: auto;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-      
+  display: flex;
+  color: black;
+  padding: 1rem;
+  justify-content: center;
+  background-color: white;
+  margin-top: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: #breaks[tablet]) {
+    height: auto;
+  }
+
+  h2 {
+    color: rgb(9, 3, 92);
+    margin-bottom: 20px;
+
     @media (max-width: #breaks[tablet]) {
-      height: auto;
+      transform: translate(0%, 0%);
+      width: 250px;
+      height: 30px;
+      text-align: center;
     }
-  
-    h2 {
-      color: rgb(9, 3, 92);
-      margin-bottom: 20px;
-  
-      @media (max-width: #breaks[tablet]) {
-        transform: translate(0%, 0%);
-        width: 250px;
-        height: 30px;
-        text-align: center; 
-      }
-  
-      @media (max-width: #breaks[mobile]) {
-        text-align: center;
-        width: 300px;
-        transform: translate(0%, 0%);
-      }
+
+    @media (max-width: #breaks[mobile]) {
+      text-align: center;
+      width: 300px;
+      transform: translate(0%, 0%);
     }
-  
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(1, 0, 64);
+    font-size: 20px;
+    margin: 0;
+
+    @media (max-width: #breaks[tablet]) {
+      flex-wrap: wrap;
       justify-content: center;
-      color: rgb(1, 0, 64);
-      font-size: 20px;
-      margin: 0;
-  
+      transform: translate(0%, 0%);
+    }
+
+    @media (max-width: #breaks[mobile]) {
+      font-size: 16px;
+    }
+
+    li {
+      margin-right: 15px;
+      margin-left: 15px;
+      display: inline-block;
+
       @media (max-width: #breaks[tablet]) {
-        flex-wrap: wrap; 
-        justify-content: center;
-        transform: translate(0%, 0%);
+        margin: 10px;
       }
-  
-      @media (max-width: #breaks[mobile]) {
-        font-size: 16px;
+
+      a {
+        text-decoration: none;
       }
-  
-      li {
-        margin-right: 15px;
-        margin-left: 15px;
-        display: inline-block;
-  
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+
         @media (max-width: #breaks[tablet]) {
-          margin: 10px; 
+          width: 40px;
+          height: 40px;
         }
-  
-        a {
-          text-decoration: none;
-        }
-  
-        img {
-          width: 50px; 
-          height: 50px; 
-          margin-left: 10px;
-  
-          @media (max-width: #breaks[tablet]) {
-            width: 40px; 
-            height: 40px;
-          }
-  
-          @media (max-width: #breaks[mobile]) {
-            width: 30px; 
-            height: 30px;
-          }
+
+        @media (max-width: #breaks[mobile]) {
+          width: 30px;
+          height: 30px;
         }
       }
     }
   }
-  
+}
